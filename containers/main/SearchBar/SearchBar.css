@@ -1,0 +1,33 @@
+/* .search-bar {
+  margin-left : 50px;
+  margin-bottom : 20px;
+} */
+
+@media screen and (max-width : 500px){
+  .search-bar input {
+    width: 60%;
+    height: 8vh;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #181818;
+    margin-bottom : 5px;
+    text-align: center;
+  }  
+}
+
+@media screen and (min-width : 501px){
+  .search-bar input {
+    width: 60%;
+    height: 70px;
+    font-size: 50px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #181818;
+    margin-bottom : 20px;
+    text-align: center;
+  }
+}
+
+
+

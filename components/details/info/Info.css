@@ -1,0 +1,54 @@
+.info {
+  width : 30%;
+  height: 90vh;
+  border : 0.5px solid blue; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main {
+  background: #e9ecef;
+  text-align: center;  
+}
+
+.details ul {
+  display: none;
+  position: absolute;
+  bottom: 50px;
+  z-index: 1;
+  width : 80%;
+  background-color: rgba(169, 209, 236, 0.8);
+  list-style: none;  
+  font-size : 1rem;
+  width : 35%;
+  padding: 10px 10px 10px 10px;
+}
+
+.details div:hover ul{
+  color : black;
+  display : block;
+  bottom : 100%;
+}
+
+.middle {
+  height : 200px;
+}
+
+.details {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 5px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropbtn:hover {
+  background-color: #2980B9;
+}
+

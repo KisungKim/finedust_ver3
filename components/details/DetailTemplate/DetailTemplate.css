@@ -1,0 +1,20 @@
+.detail-template {
+  display : flex;
+  justify-content: space-around;
+  /* height : 80vh; */
+  /* align-items : center; */
+  
+}
+
+
+ .rigth-part {
+   width : 70%;
+   height : 90vh;
+   /* background: #f1f3f5; */
+   background: white;
+ }
+
+ .park-info {
+   height : 40vh;
+   background: #f1f3f5;
+ }

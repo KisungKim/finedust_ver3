@@ -1,0 +1,21 @@
+.app-template{
+  /* border : 5px solid pink; */
+  
+  text-align: center;
+  height : 100vh;
+  margin : 0 auto;
+}
+
+.footer {
+  margin-top : 20px;
+  display : flex;
+  flex-wrap : wrap;
+  justify-content: space-around;
+}
+
+.item {
+  width : 300px;
+  height : 300px;
+  margin-bottom : 10px;
+  border : 1px solid black
+}
