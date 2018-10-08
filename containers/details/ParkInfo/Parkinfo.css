@@ -1,0 +1,38 @@
+.park-list-father {
+    display: grid;
+    grid-gap: 2vh;
+    grid-auto-flow: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.park-list {
+    display: grid;
+    grid-template-columns: repeat(200, 20%);
+    grid-template-rows: 10vh; 
+    will-change: transform;
+    grid-gap: 2vh;
+    align-content: center;
+    overflow-x: auto;
+    scroll-snap-coordinate: 0 0;
+    scroll-snap-points-x: repeat(100%);
+    scroll-snap-type: mandatory;
+    -webkit-overflow-scrolling: touch;
+}
+
+.big-park-list {
+    display: flex;
+    background-color: aquamarine;
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: start;
+}
+
+.small-park-list {
+    display: flex;
+    background-color: rgb(32, 144, 179);
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: start;
+}

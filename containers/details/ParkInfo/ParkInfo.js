@@ -7,38 +7,49 @@ import Loading from '../../../components/main/Loading';
 
 // 이제 지도 중심좌표랑 DB에서 가져온 데이터들이랑 위도 경도 차이가 얼마 이하로 나면 가져오는 식으로 하면 됨
 class ParkInfo extends Component {
-  
-  loadData = async () => {
-    const {ParkActions} = this.props    
-    try{
-      const response = await ParkActions.getPark()
-      console.log('data loaded')
-    }catch(e){
-      console.log(e)
-    }    
-  }
-
-  componentDidMount(){
-    this.loadData()
-  }
-  
   render() {
     // this.loadData()
-    const {parks} = this.props
-    console.log(parks)
+    let bigParkData = this.props.bigParkData;
+    let smallParkData = this.props.smallParkData;
+    // console.log(parks)
     
-    if(!parks[0]){
+    if(!bigParkData[0]) {
       return (
         <Loading pageHeight={40} logoWidth={50}/>
       )
-    }else{
-
-    return (
-      <div>
-        {parks[0].p_facilities}
-      </div>
-    );
-  }
+    }
+    else {
+      return (
+        <div className='park-list-father'>
+          <div className='park-list'>
+            {bigParkData.map(
+              (park) => {
+                return (
+                  <div 
+                    className="big-park-list" 
+                    onClick={ () => this.props.setCenter(park, 'big')} >
+                    {park.p_nm}
+                  </div>
+                );
+              }
+            )}
+          </div>
+          <div className='park-list'>
+            {smallParkData.map(
+              (park) => {
+                return (
+                  <div 
+                    className="small-park-list" 
+                    onClick={ () => this.props.setCenter(park, 'small')}>
+                    {park.p_small_nm}
+                  </div>
+                );
+              }
+            )}
+          </div>
+        </div>
+      );
+    }
   }
 } 
 

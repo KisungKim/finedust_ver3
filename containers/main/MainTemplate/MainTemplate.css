@@ -2,20 +2,23 @@
   /* border : 5px solid pink; */
   
   text-align: center;
-  height : 100vh;
+  height : 50vh;
   margin : 0 auto;
 }
 
 .footer {
-  margin-top : 20px;
-  display : flex;
-  flex-wrap : wrap;
-  justify-content: space-around;
+  display: grid;
+  grid-auto-rows: 100px;
+  grid-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
 }
 
-.item {
-  width : 300px;
-  height : 300px;
-  margin-bottom : 10px;
-  border : 1px solid black
+.footer-cell-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white; 
 }
+
+

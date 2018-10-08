@@ -28,7 +28,7 @@ class SearchBar extends Component {
       // 1) 아무거나로 이동할 때 오류처리 해야함
       // 2) 아무것도 입력안하고 엔터치면 맨위 리스트로 이동됨
       InputActions.change('')
-      history.push(`/app01/main_page_new/details/${data[0].id}`);
+      history.push(`/app01/main_page_new/details/${data[0].stationid}`);
     }
 
     if (e.keyCode === 38) {

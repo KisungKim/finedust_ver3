@@ -10,7 +10,7 @@ class SearchListItem extends Component {
     const { data } = this.props;
 
     return (
-      <Link to={"/app01/main_page_new/details/" + data.id} className="link">
+      <Link to={"/app01/main_page_new/details/" + data.stationid} className="link">
         <div
           className="city-list-item"
           onMouseOver={() => {

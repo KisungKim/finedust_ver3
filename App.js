@@ -50,7 +50,7 @@ class App extends Component {
           <NavBar />
           <Switch>
             <Route
-              path="/app01/main_page_new/details/:id"
+              path="/app01/main_page_new/details/:stationid"
               render={({ match }) => {
                 return <DetailTemplate data={data} match={match} />;
               }}

@@ -19,7 +19,7 @@ class SearchList extends Component {
         <SearchListItem
           cityName={item.stationname}
           key={item.id}
-          id={item.id}
+          stationid={item.stationid}
           khaigrade={item.khaigrade}
           data={item}
           history={this.props.hostory}

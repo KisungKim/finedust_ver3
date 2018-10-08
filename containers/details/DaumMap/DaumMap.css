@@ -5,3 +5,28 @@
   /* 이건 레이아웃 수업 보고 해보자*/
   /* float : right; */
 }
+
+#map-show-detail-info {
+  z-index: 3;
+  position: absolute;
+  background-color:#91a7ff;
+  top: 5%;
+  right: 2%;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  opacity: 0.7;
+  font-size:20px
+}
+
+#handleSize {
+  position: absolute;
+  background-color:white;
+  top:5%;
+  left:2%;
+  z-index:2;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  font-size:20px
+}
